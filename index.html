@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+<body>
+   <ul>
+      <li>
+         <h1 id="123">Лабораторная работа №1</h1>
+      </li>
+      <li>
+         <p> Абзац<em> Важный текст</em><br>перенос стороки
+      </li>
+      <li><strong> Очень важный текст</strong></p>
+      </li>
+      <li><a href="http://www.kubsu.ru/"> Абсолютная ссылка на главную страницу</a></li>
+      <li><a href="https://www.kubsu.ru/">абсолютная в протоколе https</a></li>
+      <li><img src="image.jpg" alt=" Легендарный котик" /> </li>
+      <li><a href="./index.html"> Сокращенная ссылка на внутреннюю страницу</a></li>
+      <li> <a href="./index.html"> Сокращенная ссылка на главную страницу</a></li>
+      <li><a href="#123">Ссылка на фрагмент текущей страницы </a></li>
+      <li><a href="https://www.kubsu.ru?a=123&b=23&c=12">Ссылка c тремя параметрами URL </a> </li>
+      <li><a href="https://www.kubsu.ru/?id=1010123124">Ссылка с параметром id в URL</a> </li>
+      <li><a href="./index2.html"> Ссылка на страницу в текущем каталоге </li>
+      <li><a href="./catalogs/about/index3.html">Ссылка на страницу в каталоге about</a></li>
+      <li>Ссылка на контекстную в тексте абзаца<a href="./index2.html"> здесь</a></li>
+      <li><a href="http://www.kubsu.ru/university#zone-content-wrapper">ссылка с другого сайта</a></li>
+      <img src="image2.jpg" usemap="image2" alt=" бесконечное лето">
+      <map name="image2"><area coords="500, 500, 100000000" shape="circle" href="index2.html"
+            alt="Координаты для червяка"></map>
+      <map name="image2"><area coords="0, 0, 1000, 1000" shape="rect" href="index2.html"
+            alt="Координаты для червяка"></map>
+      <li><a href="#">Ссылка с пустым href</a></li>
+      <li><a>ссылка без href</a></li>
+      <li><a href="index2.html" rel="nofollow">Ссылка по которой запрещен переход поискавикам</a></li>
+      <li>
+         <noindex><a href="index2.html">Ссылка с запретом индексации</noindex></a>
+      </li>
+      <ol>
+         <li><a href="index.html" title="Страница 1">Страница 1</a></li>
+         <li><a href="./index2.html" title="Страница 2">Страница 2</a></li>
+         <li><a href="./catalogs/about/index3.html" title="Страница 3">Страница 3</a></li>
+         <li><a href="./catalogs/index4.html" title="Страница 4">Страница 4</a></li>
+      </ol>
+      <li><a href="https://s0188212:3fRaPaD8@kubsu.ru/user">ссылкa на файл на сервере FTP с авторизацией; </a></li>
+      <form action="index.html" method="POST">
+         <label>
+            ФИО:<br />
+            <input name="field-name-1" value="Фамилия Имя Отчество" />
+         </label><br />
+         <label>
+            Телефон:<br />
+            <input name="field-email" value="+71231231231" type="tel" />
+         </label><br />
+         <label>
+            email:<br />
+            <input name="field-email" value="test@example.com" type="email" />
+         </label><br />
+         <label>
+            дата:<br />
+            <input name="field-date" value="2019-08-13" type="date" />
+         </label><br />
+
+         Пол:<br />
+         <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1" />
+            Мужской</label>
+         <label><input type="radio" name="radio-group-1" value="Значение2" />
+            Женский</label><br />
+         <label>
+            Список (listbox с множественным выбором):
+            <br />
+            <select name="field-name-4[]" multiple="multiple">
+               <option value="Pascal">Pascal</option>
+               <option value="C" selected="selected">C</option>
+               <option value="C++" selected="selected">C++</option>
+               <option value="JavaScript" selected="selected">JavaScript</option>
+               <option value="PHP" selected="selected">PHP</option>
+               <option value="Python" selected="selected">Python</option>
+               <option value="Java" selected="selected">Java</option>
+               <option value="Haskel" selected="selected">Haskel</option>
+               <option value="Clojure" selected="selected">Clojure</option>
+               <option value="Prolog" selected="selected">Prolog</option>
+               <option value="Scala" selected="selected">Scala</option>
+            </select>
+         </label><br />
+         <label>
+            Биография:<br />
+            <textarea name="field-name-2">Расскажите о себе</textarea>
+         </label><br />
+         Сконтрактом озаномлен:<br />
+         <label><input type="checkbox" checked="checked" name="check-1" />
+            Ознакомлен</label><br />
+            <input type="submit" value="Отправить" />
+</form>
+   </ul>
+</body>
+
+</head>
+
+</html>
