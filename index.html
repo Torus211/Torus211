@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторная работа №1</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
@@ -40,8 +40,9 @@
         <li>
             <img src="image2.jpg" usemap="#image2" alt="Бесконечное лето">
             <map name="image2">
-                <area coords="200,200,100" shape="circle" href="index2.html"  title="Координаты для круга">
-                <area coords="0,0,100,100" shape="rect" href="./catalogs/index4.html" title="Координаты для прямоугольника">
+                <area coords="200,200,100" shape="circle" href="index2.html" title="Координаты для круга">
+                <area coords="0,0,100,100" shape="rect" href="./catalogs/index4.html"
+                    title="Координаты для прямоугольника">
             </map>
         </li>
         <li><a href="#">Ссылка с пустым href</a></li>
@@ -52,16 +53,16 @@
 
         <li><a href="https://s123123:123123@kubsu.ru/user">Ссылка на файл на сервере FTP с авторизацией</a></li>
         <li><!--noindex--> <a href="index2.html">Ссылка с запретом индексации</a><!--/noindex--></li>
-        
+
     </ul>
-   
+
     <ol>
         <li><a href="index.html" title="Страница 1">Страница 1</a></li>
         <li><a href="./index2.html" title="Страница 2">Страница 2</a></li>
         <li><a href="./catalogs/about/index3.html" title="Страница 3">Страница 3</a></li>
         <li><a href="./catalogs/index4.html" title="Страница 4">Страница 4</a></li>
     </ol>
-    
+
     <table id="table">
         <thead>
             <tr>
@@ -110,15 +111,14 @@
         </label><br />
         <label>
             Телефон:<br />
-            <input name="field-phone" value="+71231231231" type="tel" />
+            <input name="field-phone" value="+71231231231" type="tel" pattern="\+7\d{10}" required />
         </label><br />
         <label>
             Email:<br />
-            <input name="field-email" value="test@example.com" type="email" />
+            <input name="field-email" value="test@example.com" type="email" required />
         </label><br />
-        <label>
-            Дата:<br />
-            <input name="field-date" value="2019-08-13" type="date" />
+        Дата:<br />
+        <input name="field-date" value="2019-08-13" type="date" />
         </label><br />
         Пол:<br />
         <label><input type="radio" checked="checked" name="radio-group-1" value="Мужской" /> Мужской</label>
