@@ -105,13 +105,14 @@
 
 
     <form id="form" action="index.html" method="POST">
-        <label>
-            ФИО:<br />
-            <input name="field-name-1" value="Фамилия Имя Отчество" />
-        </label><br />
-        <label>
-            Телефон:<br />
-            <input name="field-phone" value="+71231231231" type="tel" pattern="\+7\d{10}" required />
+
+        <label for="fullName">ФИО:</label>
+        <input type="text" id="fullName" name="fullName" required
+            pattern="^[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+$" title="Введите ФИО в формате: Фамилия Имя Отчество"
+            placeholder="Иванов Иван Иванович">
+
+        Телефон:<br />
+        <input name="field-phone" value="+71231231231" type="tel" pattern="\+7\d{10}" required />
         </label><br />
         <label>
             Email:<br />
