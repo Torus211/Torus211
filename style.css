@@ -8,6 +8,7 @@ body {
     padding: 0;
     background-color: black;
     color: chartreuse;
+    font-size: 1rem; /* Базовый размер шрифта */
 }
 
 header {
@@ -47,6 +48,8 @@ footer {
 nav a {
     color: rgb(120, 238, 177);
     font-family: fantasy;
+    padding: 10px; /* Отступы вокруг ссылок */
+    margin: 5px; /* Отступы между ссылками */
 }
 
 tbody tr:nth-child(even) {
@@ -57,36 +60,38 @@ tbody tr:nth-child(odd) {
     background-color: rgb(42, 55, 44);
 }
 
-
-
-    @media screen and (max-width: 768px) {
-        
-        header, nav, footer {
-            flex-direction: column; /* Вертикальное расположение элементов */
-            align-items: center; /* Центрируем элементы по горизонтали */
-        }
+@media screen and (max-width: 768px) {
     
-        nav {
-            margin: 10px 0; /* Добавляем отступы между элементами навигации */
-        }
-    
-        #logo {
-            width: 80px; /* Уменьшаем размер логотипа */
-            height: 80px;
-        }
-    
-        .table-section, .links-section {
-            flex-basis: 100%; /* Элементы занимают всю ширину */
-            margin: 0; /* Убираем отступы */
-        }
-        #photo{
-            width: 250px;
-            height: 250px;
-        }
+    header, nav, footer {
+        flex-direction: column; /* Вертикальное расположение элементов */
+        align-items: center; /* Центрируем элементы по горизонтали */
     }
-    
-    
-    
-        
-    
 
+    nav {
+        margin: 10px 0; /* Добавляем отступы между элементами навигации */
+        justify-content: center; /* Центрируем навигацию */
+    }
+
+    #logo {
+        width: 80px; /* Уменьшаем размер логотипа */
+        height: 80px;
+    }
+
+    .table-section, .links-section {
+        flex-basis: 100%; /* Элементы занимают всю ширину */
+        margin: 0; /* Убираем отступы */
+    }
+
+    #photo1 {
+        width: 250px;
+        height: 250px;
+    }
+    #photo2 {
+        width: 240px;
+        height: 135px;
+    }
+
+    body {
+        font-size: 0.9rem; /* Уменьшаем размер шрифта для мобильных */
+    }
+}
