@@ -10,10 +10,8 @@ body {
     color: chartreuse;
     font-size: 1rem; /* Базовый размер шрифта */
 }
-.container {
-display: flex;
-flex-direction: column;
-}
+
+
 header {
     display: flex;
     flex-direction: row;
@@ -63,14 +61,20 @@ tbody tr:nth-child(odd) {
     background-color: rgb(42, 55, 44);
 }
 
+
 @media screen and (max-width: 768px) {
-    
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
     header, nav, footer {
+        -ms-flex-order: 0;
         flex-direction: column; /* Вертикальное расположение элементов */
         align-items: center; /* Центрируем элементы по горизонтали */
     }
 
     nav {
+        -ms-flex-order: 0;
         margin: 10px 0; /* Добавляем отступы между элементами навигации */
         justify-content: center; /* Центрируем навигацию */
     }
@@ -81,12 +85,12 @@ tbody tr:nth-child(odd) {
     }
 
     .table-section {
-       -ms-flex-order: -1;
+       order: 1;
         flex-basis: 100%; /* Элементы занимают всю ширину */
         margin: 0; /* Убираем отступы */
     }
     .links-section{
-        -ms-flex-order: 0;
+        order:2;
         flex-basis: 100%; /* Элементы занимают всю ширину */
         margin: 0; /* Убираем отступы */
 
