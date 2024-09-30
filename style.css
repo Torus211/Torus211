@@ -1,75 +1,86 @@
+header, nav, main, footer {
+    width: 100%;
+}
 
-    header, nav, main, footer{
-        width: 100%;
-    }
-    body {
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     background-color: black;
     color: chartreuse;
-    }
+}
 
-    header{
-        flex-direction: row;
-       background-color:green;
-        color: azure;
-        text-align: center;
-        padding: 0;
-    }
-    nav{
-        flex-direction: row;
-        margin: 0;
-        color: royalblue;
-        float: right;
-    }
-    footer{
-        flex-direction: row;
-        background-color:chartreuse;
-        color: rgb(0, 0, 0);
-        margin: 0;
-        text-align: center;
-        height: 50px;
-    }
-    #logo {
-        width: 100px;
-        height: 100px;
-        float: left;
-        margin-right: 10px;
-        }
-    a{
-        flex-direction: row;
-        color: rgb(120, 238, 177);
-        font-family: fantasy;
-    }
-    tbody tr:nth-child(even) {
-        flex-direction: row;
-        background-color: rgb(44, 228, 115);
-    }
-    tbody tr:nth-child(odd){
-        flex-direction: row;
-        background-color: rgb(42, 55, 44);
-    }
-    @media screen and (min-device-width: 480px){
-        .container {
-            flex-direction: column;
-            justify-content: space-between;
-        }
-    
-        .table-section {
-            flex-direction: column;
-            order: 1; /* Первая по порядку */
-            flex-basis: 60%;
-            margin-right: 20px;
-        }
-    
-        .links-section {
-            flex-direction: column;
-            order: 2; /* Вторая по порядку */
-            flex-basis: 35%;
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    color: azure;
+    text-align: center;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    color: royalblue;
+    float: right;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: chartreuse;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    text-align: center;
+    height: 50px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+nav a {
+    color: rgb(120, 238, 177);
+    font-family: fantasy;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(44, 228, 115);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(42, 55, 44);
+}
+
+
+
+    @media screen and (max-width: 768px) {
+        header, nav, footer {
+            flex-direction: column; /* Вертикальное расположение элементов */
+            align-items: center; /* Центрируем элементы по горизонтали */
         }
     
+        nav {
+            margin: 10px 0; /* Добавляем отступы между элементами навигации */
+        }
+    
+        #logo {
+            width: 80px; /* Уменьшаем размер логотипа */
+            height: 80px;
+        }
+    
+        .table-section, .links-section {
+            flex-basis: 100%; /* Элементы занимают всю ширину */
+            margin: 0; /* Убираем отступы */
+        }
     }
+    
+    
     
         
     
