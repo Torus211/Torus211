@@ -1,8 +1,13 @@
 
+    header, nav, main, footer{
+        width: 100%;
+    }
     body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: black;
+    color: chartreuse;
     }
 
     header{
@@ -17,8 +22,8 @@
         float: right;
     }
     footer{
-        background-color: rgb(62, 24, 214);
-        color: rgb(244, 246, 248);
+        background-color:chartreuse;
+        color: rgb(0, 0, 0);
         margin: 0;
         text-align: center;
         height: 50px;
@@ -31,6 +36,7 @@
         }
     a{
         color: rgb(120, 238, 177);
+        font-family: fantasy;
     }
     tbody tr:nth-child(even) {
         background-color: rgb(44, 228, 115);
@@ -38,4 +44,34 @@
     tbody tr:nth-child(odd){
         background-color: rgb(42, 55, 44);
     }
+    @media screen and (max-device-width: 480px){
+        .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .table-section {
+            order: 1; /* Первая по порядку */
+            flex-basis: 60%;
+            margin-right: 20px;
+        }
+    
+        .links-section {
+            order: 2; /* Вторая по порядку */
+            flex-basis: 35%;
+        }
+    
+        .nav ul {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row; /* Горизонтальное расположение на больших экранах */
+        }
+    
+        .nav ul li {
+            margin: 0 15px; /* Отступы между ссылками */
+        }
+    }
+    
+        
+    
 
