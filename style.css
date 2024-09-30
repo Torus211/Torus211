@@ -73,6 +73,7 @@ tbody tr:nth-child(odd) {
         align-items: center; /* Центрируем элементы по горизонтали */
     }
 
+    
     nav {
         -ms-flex-order: 0;
         margin: 10px 0; /* Добавляем отступы между элементами навигации */
@@ -95,7 +96,7 @@ tbody tr:nth-child(odd) {
         margin: 0; /* Убираем отступы */
 
     }
-
+   
     #photo1 {
         width: 250px;
         height: 250px;
