@@ -81,12 +81,12 @@ tbody tr:nth-child(odd) {
     }
 
     .table-section {
-       -ms-flex-order: 1;
+       -ms-flex-order: -1;
         flex-basis: 100%; /* Элементы занимают всю ширину */
         margin: 0; /* Убираем отступы */
     }
     .links-section{
-        -ms-flex-order: 2;
+        -ms-flex-order: 0;
         flex-basis: 100%; /* Элементы занимают всю ширину */
         margin: 0; /* Убираем отступы */
 
