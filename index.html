@@ -10,146 +10,148 @@
 </head>
 
 <body>
-    <img id="logo" src="logo.jpg" alt="Наш лого" />
-    <nav>
-        <a href="#list">Список </a>
-        <a href="#table">Таблица </a>
-        <a href="#form">Форма</a>
-    </nav>
-    <h1 id="123">Лабораторная работа №1</h1>
-    <h2>(Коты захватывают мир)</h2> <br>
-    <p>Абзац <em>Важный текст</em><br>перенос строки</p>
-    <ul id="list">
+    <main class="container">
+        <img id="logo" src="logo.jpg" alt="Наш лого" />
+        <nav>
+            <a href="#list">Список </a>
+            <a href="#table">Таблица </a>
+            <a href="#form">Форма</a>
+        </nav>
+        <h1 id="123">Лабораторная работа №1</h1>
+        <h2>(Коты захватывают мир)</h2> <br>
+        <p>Абзац <em>Важный текст</em><br>перенос строки</p>
+        <section class="links-section">
+        <ul id="list">
+            <li>
+                <p><strong>Очень важный текст</strong></p>
+            </li>
+            <li><a href="http://www.kubsu.ru/">Абсолютная ссылка на главную страницу</a></li>
+            <li><a href="https://www.kubsu.ru/">Абсолютная ссылка в протоколе HTTPS</a></li>
+            <li><a href="index2.html"><img src="image.jpg" alt="Легендарный котик"></a></li>
+            <li><a href="./index.html" title="ССылка на страницу">Сокращенная ссылка на внутреннюю страницу</a></li>
+            <li><a href="#123">Ссылка на фрагмент текущей страницы</a></li>
+            <li><a href="https://www.kubsu.ru?a=123&b=23&c=12">Ссылка с тремя параметрами URL</a></li>
+            <li><a href="https://www.kubsu.ru/?id=1010123124">Ссылка с параметром id в URL</a></li>
+            <li><a href="./index2.html">Ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="./catalogs/about/index3.html">Ссылка на страницу в каталоге about</a></li>
+            <li>Ссылка на контекстную в тексте абзаца <a href="./index2.html">здесь</a></li>
+            <li><a href="http://www.kubsu.ru/university#zone-content-wrapper">Ссылка с другого сайта</a></li>
+            <li>
+                <img src="image2.jpg" usemap="#image2" alt="Бесконечное лето">
+                <map name="image2">
+                    <area coords="200,200,100" shape="circle" href="index2.html" title="Координаты для круга">
+                    <area coords="0,0,100,100" shape="rect" href="./catalogs/index4.html"
+                        title="Координаты для прямоугольника">
+                </map>
+            </li>
+            <li><a href="#">Ссылка с пустым href</a></li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href="index2.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
 
 
 
-        <li>
-            <p><strong>Очень важный текст</strong></p>
-        </li>
-        <li><a href="http://www.kubsu.ru/">Абсолютная ссылка на главную страницу</a></li>
-        <li><a href="https://www.kubsu.ru/">Абсолютная ссылка в протоколе HTTPS</a></li>
-        <li><a href="index2.html"><img src="image.jpg"  alt="Легендарный котик"></a></li>
-        <li><a href="./index.html" title="ССылка на страницу">Сокращенная ссылка на внутреннюю страницу</a></li>
-        <li><a href="#123">Ссылка на фрагмент текущей страницы</a></li>
-        <li><a href="https://www.kubsu.ru?a=123&b=23&c=12">Ссылка с тремя параметрами URL</a></li>
-        <li><a href="https://www.kubsu.ru/?id=1010123124">Ссылка с параметром id в URL</a></li>
-        <li><a href="./index2.html">Ссылка на страницу в текущем каталоге</a></li>
-        <li><a href="./catalogs/about/index3.html">Ссылка на страницу в каталоге about</a></li>
-        <li>Ссылка на контекстную в тексте абзаца <a href="./index2.html">здесь</a></li>
-        <li><a href="http://www.kubsu.ru/university#zone-content-wrapper">Ссылка с другого сайта</a></li>
-        <li>
-            <img src="image2.jpg" usemap="#image2" alt="Бесконечное лето">
-            <map name="image2">
-                <area coords="200,200,100" shape="circle" href="index2.html" title="Координаты для круга">
-                <area coords="0,0,100,100" shape="rect" href="./catalogs/index4.html"
-                    title="Координаты для прямоугольника">
-            </map>
-        </li>
-        <li><a href="#">Ссылка с пустым href</a></li>
-        <li><a>Ссылка без href</a></li>
-        <li><a href="index2.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+            <li><a href="https://s123123:123123@kubsu.ru/user">Ссылка на файл на сервере FTP с авторизацией</a></li>
+            <li><!--noindex--> <a href="index2.html">Ссылка с запретом индексации</a><!--/noindex--></li>
+
+        </ul>
+
+        <ol>
+            <li><a href="index.html" title="Страница 1">Страница 1</a></li>
+            <li><a href="./index2.html" title="Страница 2">Страница 2</a></li>
+            <li><a href="./catalogs/about/index3.html" title="Страница 3">Страница 3</a></li>
+            <li><a href="./catalogs/index4.html" title="Страница 4">Страница 4</a></li>
+        </ol>
+    </section>
+        <section class="table-section">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Колонка 1</th>
+                        <th scope="col">Колонка 2</th>
+                        <th scope="col">Колонка 3</th>
+                        <th scope="col">Колонка 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">Ячейка 11 объединенная с 12</td>
+                        <td colspan="2">Ячейка 13 объединенная с 14</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 21</td>
+                        <td>Ячейка 22</td>
+                        <td>Ячейка 23</td>
+                        <td>Ячейка 24</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 31</td>
+                        <td>Ячейка 32</td>
+                        <td>Ячейка 33</td>
+                        <td>Ячейка 34</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Ячейка 41 объединенная с 42</td>
+                        <td colspan="2">Ячейка 43 объединенная с 44</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Ячейка 51 52 53 54</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Ячейка 61 62 63</td>
+                        <td>Ячейка 64</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
 
+        <form id="form" action="index.html" method="POST">
 
-        <li><a href="https://s123123:123123@kubsu.ru/user">Ссылка на файл на сервере FTP с авторизацией</a></li>
-        <li><!--noindex--> <a href="index2.html">Ссылка с запретом индексации</a><!--/noindex--></li>
+            <label for="fullName">ФИО:</label>
+            <input type="text" id="fullName" name="fullName" required
+                pattern="^[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+$"
+                title="Введите ФИО в формате: Фамилия Имя Отчество" placeholder="Иванов Иван Иванович">
 
-    </ul>
-
-    <ol>
-        <li><a href="index.html" title="Страница 1">Страница 1</a></li>
-        <li><a href="./index2.html" title="Страница 2">Страница 2</a></li>
-        <li><a href="./catalogs/about/index3.html" title="Страница 3">Страница 3</a></li>
-        <li><a href="./catalogs/index4.html" title="Страница 4">Страница 4</a></li>
-    </ol>
-
-    <table id="table">
-        <thead>
-            <tr>
-                <th scope="col">Колонка 1</th>
-                <th scope="col">Колонка 2</th>
-                <th scope="col">Колонка 3</th>
-                <th scope="col">Колонка 4</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="2">Ячейка 11 объединенная с 12</td>
-                <td colspan="2">Ячейка 13 объединенная с 14</td>
-            </tr>
-            <tr>
-                <td>Ячейка 21</td>
-                <td>Ячейка 22</td>
-                <td>Ячейка 23</td>
-                <td>Ячейка 24</td>
-            </tr>
-            <tr>
-                <td>Ячейка 31</td>
-                <td>Ячейка 32</td>
-                <td>Ячейка 33</td>
-                <td>Ячейка 34</td>
-            </tr>
-            <tr>
-                <td colspan="2">Ячейка 41 объединенная с 42</td>
-                <td colspan="2">Ячейка 43 объединенная с 44</td>
-            </tr>
-            <tr>
-                <td colspan="4">Ячейка 51 52 53 54</td>
-            </tr>
-            <tr>
-                <td colspan="3">Ячейка 61 62 63</td>
-                <td>Ячейка 64</td>
-            </tr>
-        </tbody>
-    </table>
-
-
-    <form id="form" action="index.html" method="POST">
-
-        <label for="fullName">ФИО:</label>
-        <input type="text" id="fullName" name="fullName" required
-            pattern="^[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+$" title="Введите ФИО в формате: Фамилия Имя Отчество"
-            placeholder="Иванов Иван Иванович">
-
-        Телефон:<br />
-        <input name="field-phone" value="+71231231231" type="tel" pattern="\+7\d{10}" required />
-        </label><br />
-        <label>
-            Email:<br />
-            <input name="field-email" value="test@example.com" type="email" required />
-        </label><br />
-        Дата:<br />
-        <input name="field-date" value="2019-08-13" type="date" />
-        </label><br />
-        Пол:<br />
-        <label><input type="radio" checked="checked" name="radio-group-1" value="Мужской" /> Мужской</label>
-        <label><input type="radio" name="radio-group-1" value="Женский" /> Женский</label><br />
-        <label>
-            Список (listbox с множественным выбором):<br />
-            <select name="field-name-4[]" multiple="multiple">
-                <option value="Pascal">Pascal</option>
-                <option value="C" selected="selected">C</option>
-                <option value="C++" selected="selected">C++</option>
-                <option value="JavaScript" selected="selected">JavaScript</option>
-                <option value="PHP" selected="selected">PHP</option>
-                <option value="Python" selected="selected">Python</option>
-                <option value="Java" selected="selected">Java</option>
-                <option value="Haskell" selected="selected">Haskell</option>
-                <option value="Clojure" selected="selected">Clojure</option>
-                <option value="Prolog" selected="selected">Prolog</option>
-                <option value="Scala" selected="selected">Scala</option>
-            </select>
-        </label><br />
-        <label>
-            Биография:<br />
-            <textarea name="field-name-2">Расскажите о себе</textarea>
-        </label><br />
-        Сконтрактом ознакомлен:<br />
-        <label><input type="checkbox" checked="checked" name="check-1" /> Ознакомлен</label><br />
-        <input type="submit" value="Отправить" />
-    </form>
-    <br>
-    <footer>(C) Torus Hidenami</footer> <br>
+            Телефон:<br />
+            <input name="field-phone" value="+71231231231" type="tel" pattern="\+7\d{10}" required />
+            </label><br />
+            <label>
+                Email:<br />
+                <input name="field-email" value="test@example.com" type="email" required />
+            </label><br />
+            Дата:<br />
+            <input name="field-date" value="2019-08-13" type="date" />
+            </label><br />
+            Пол:<br />
+            <label><input type="radio" checked="checked" name="radio-group-1" value="Мужской" /> Мужской</label>
+            <label><input type="radio" name="radio-group-1" value="Женский" /> Женский</label><br />
+            <label>
+                Список (listbox с множественным выбором):<br />
+                <select name="field-name-4[]" multiple="multiple">
+                    <option value="Pascal">Pascal</option>
+                    <option value="C" selected="selected">C</option>
+                    <option value="C++" selected="selected">C++</option>
+                    <option value="JavaScript" selected="selected">JavaScript</option>
+                    <option value="PHP" selected="selected">PHP</option>
+                    <option value="Python" selected="selected">Python</option>
+                    <option value="Java" selected="selected">Java</option>
+                    <option value="Haskell" selected="selected">Haskell</option>
+                    <option value="Clojure" selected="selected">Clojure</option>
+                    <option value="Prolog" selected="selected">Prolog</option>
+                    <option value="Scala" selected="selected">Scala</option>
+                </select>
+            </label><br />
+            <label>
+                Биография:<br />
+                <textarea name="field-name-2">Расскажите о себе</textarea>
+            </label><br />
+            Сконтрактом ознакомлен:<br />
+            <label><input type="checkbox" checked="checked" name="check-1" /> Ознакомлен</label><br />
+            <input type="submit" value="Отправить" />
+        </form>
+        <br>
+        <footer>(C) Torus Hidenami</footer> <br>
+    </main>
 </body>
 
 </html>

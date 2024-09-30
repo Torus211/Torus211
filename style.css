@@ -61,15 +61,6 @@
             flex-basis: 35%;
         }
     
-        .nav ul {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row; /* Горизонтальное расположение на больших экранах */
-        }
-    
-        .nav ul li {
-            margin: 0 15px; /* Отступы между ссылками */
-        }
     }
     
         
