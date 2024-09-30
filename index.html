@@ -22,7 +22,6 @@
     <p>Абзац <em>Важный текст</em><br>перенос строки</p>
     <main class="container">
 
-
         <div class="links-section">
             <ul id="list">
                 <li>
@@ -50,9 +49,6 @@
                 <li><a href="#">Ссылка с пустым href</a></li>
                 <li><a>Ссылка без href</a></li>
                 <li><a href="index2.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
-
-
-
                 <li><a href="https://s123123:123123@kubsu.ru/user">Ссылка на файл на сервере FTP с авторизацией</a></li>
                 <li><!--noindex--> <a href="index2.html">Ссылка с запретом индексации</a><!--/noindex--></li>
 
@@ -107,57 +103,57 @@
             </table>
         </div>
 
-        </main>
-            <form id="form" action="index.html" method="POST">
+    </main>
+    <form id="form" action="index.html" method="POST">
 
-                <label for="fullName">ФИО:</label>
-                <input type="text" id="fullName" name="fullName" required
-                    pattern="^[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+$"
-                    title="Введите ФИО в формате: Фамилия Имя Отчество" placeholder="Иванов Иван Иванович">
+        <label for="fullName">ФИО:</label>
+        <input type="text" id="fullName" name="fullName" required
+            pattern="^[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+$" title="Введите ФИО в формате: Фамилия Имя Отчество"
+            placeholder="Иванов Иван Иванович">
 
-                Телефон:<br />
-                <input name="field-phone" value="+71231231231" type="tel" pattern="\+7\d{10}" required />
-                </label><br />
-                <label>
-                    Email:<br />
-                    <input name="field-email" value="test@example.com" type="email" required />
-                </label><br />
-                Дата:<br />
-                <input name="field-date" value="2019-08-13" type="date" />
-                </label><br />
-                Пол:<br />
-                <label><input type="radio" checked="checked" name="radio-group-1" value="Мужской" /> Мужской</label>
-                <label><input type="radio" name="radio-group-1" value="Женский" /> Женский</label><br />
-                <label>
-                    Список (listbox с множественным выбором):<br />
-                    <select name="field-name-4[]" multiple="multiple">
-                        <option value="Pascal">Pascal</option>
-                        <option value="C" selected="selected">C</option>
-                        <option value="C++" selected="selected">C++</option>
-                        <option value="JavaScript" selected="selected">JavaScript</option>
-                        <option value="PHP" selected="selected">PHP</option>
-                        <option value="Python" selected="selected">Python</option>
-                        <option value="Java" selected="selected">Java</option>
-                        <option value="Haskell" selected="selected">Haskell</option>
-                        <option value="Clojure" selected="selected">Clojure</option>
-                        <option value="Prolog" selected="selected">Prolog</option>
-                        <option value="Scala" selected="selected">Scala</option>
-                    </select>
-                </label><br />
-                <label>
-                    Биография:<br />
-                    <textarea name="field-name-2">Расскажите о себе</textarea>
-                </label><br />
-                Сконтрактом ознакомлен:<br />
-                <label><input type="checkbox" checked="checked" name="check-1" /> Ознакомлен</label><br />
-                <input type="submit" value="Отправить" />
-            </form>
-        </div>
-        <br>
-        
-            <footer>(C) Torus Hidenami</footer> <br>
-       
-    
+        Телефон:<br />
+        <input name="field-phone" value="+71231231231" type="tel" pattern="\+7\d{10}" required />
+        </label><br />
+        <label>
+            Email:<br />
+            <input name="field-email" value="test@example.com" type="email" required />
+        </label><br />
+        Дата:<br />
+        <input name="field-date" value="2019-08-13" type="date" />
+        </label><br />
+        Пол:<br />
+        <label><input type="radio" checked="checked" name="radio-group-1" value="Мужской" /> Мужской</label>
+        <label><input type="radio" name="radio-group-1" value="Женский" /> Женский</label><br />
+        <label>
+            Список (listbox с множественным выбором):<br />
+            <select name="field-name-4[]" multiple="multiple">
+                <option value="Pascal">Pascal</option>
+                <option value="C" selected="selected">C</option>
+                <option value="C++" selected="selected">C++</option>
+                <option value="JavaScript" selected="selected">JavaScript</option>
+                <option value="PHP" selected="selected">PHP</option>
+                <option value="Python" selected="selected">Python</option>
+                <option value="Java" selected="selected">Java</option>
+                <option value="Haskell" selected="selected">Haskell</option>
+                <option value="Clojure" selected="selected">Clojure</option>
+                <option value="Prolog" selected="selected">Prolog</option>
+                <option value="Scala" selected="selected">Scala</option>
+            </select>
+        </label><br />
+        <label>
+            Биография:<br />
+            <textarea name="field-name-2">Расскажите о себе</textarea>
+        </label><br />
+        С контрактом ознакомлен:<br />
+        <label><input type="checkbox" checked="checked" name="check-1" /> Ознакомлен</label><br />
+        <input type="submit" value="Отправить" />
+    </form>
+    </div>
+    <br>
+
+    <footer>(C) Torus Hidenami</footer> <br>
+
+
 </body>
 
 </html>

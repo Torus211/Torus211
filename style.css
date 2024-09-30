@@ -21,13 +21,7 @@ header {
     padding: 0;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    color: royalblue;
-    float: right;
-}
+
 
 footer {
     display: flex;
@@ -46,12 +40,7 @@ footer {
     margin-right: 10px;
 }
 
-nav a {
-    color: rgb(120, 238, 177);
-    font-family: fantasy;
-    padding: 10px; /* Отступы вокруг ссылок */
-    margin: 5px; /* Отступы между ссылками */
-}
+
 
 tbody tr:nth-child(even) {
     background-color: rgb(44, 228, 115);
@@ -69,7 +58,7 @@ tbody tr:nth-child(odd) {
     }
     header, nav, footer {
         -ms-flex-order: 0;
-        flex-direction: column; /* Вертикальное расположение элементов */
+        flex-direction: row; /* Вертикальное расположение элементов */
         align-items: center; /* Центрируем элементы по горизонтали */
     }
 
