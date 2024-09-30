@@ -8,60 +8,62 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+<header><img id="logo" src="logo.jpg" alt="Наш лого" />
+    <nav>
+        <a href="#list">Список </a>
+        <a href="#table">Таблица </a>
+        <a href="#form">Форма</a>
+    </nav>
+</header>
 
 <body>
     <main class="container">
-        <img id="logo" src="logo.jpg" alt="Наш лого" />
-        <nav>
-            <a href="#list">Список </a>
-            <a href="#table">Таблица </a>
-            <a href="#form">Форма</a>
-        </nav>
+
         <h1 id="123">Лабораторная работа №1</h1>
         <h2>(Коты захватывают мир)</h2> <br>
         <p>Абзац <em>Важный текст</em><br>перенос строки</p>
         <section class="links-section">
-        <ul id="list">
-            <li>
-                <p><strong>Очень важный текст</strong></p>
-            </li>
-            <li><a href="http://www.kubsu.ru/">Абсолютная ссылка на главную страницу</a></li>
-            <li><a href="https://www.kubsu.ru/">Абсолютная ссылка в протоколе HTTPS</a></li>
-            <li><a href="index2.html"><img src="image.jpg" alt="Легендарный котик"></a></li>
-            <li><a href="./index.html" title="ССылка на страницу">Сокращенная ссылка на внутреннюю страницу</a></li>
-            <li><a href="#123">Ссылка на фрагмент текущей страницы</a></li>
-            <li><a href="https://www.kubsu.ru?a=123&b=23&c=12">Ссылка с тремя параметрами URL</a></li>
-            <li><a href="https://www.kubsu.ru/?id=1010123124">Ссылка с параметром id в URL</a></li>
-            <li><a href="./index2.html">Ссылка на страницу в текущем каталоге</a></li>
-            <li><a href="./catalogs/about/index3.html">Ссылка на страницу в каталоге about</a></li>
-            <li>Ссылка на контекстную в тексте абзаца <a href="./index2.html">здесь</a></li>
-            <li><a href="http://www.kubsu.ru/university#zone-content-wrapper">Ссылка с другого сайта</a></li>
-            <li>
-                <img src="image2.jpg" usemap="#image2" alt="Бесконечное лето">
-                <map name="image2">
-                    <area coords="200,200,100" shape="circle" href="index2.html" title="Координаты для круга">
-                    <area coords="0,0,100,100" shape="rect" href="./catalogs/index4.html"
-                        title="Координаты для прямоугольника">
-                </map>
-            </li>
-            <li><a href="#">Ссылка с пустым href</a></li>
-            <li><a>Ссылка без href</a></li>
-            <li><a href="index2.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+            <ul id="list">
+                <li>
+                    <p><strong>Очень важный текст</strong></p>
+                </li>
+                <li><a href="http://www.kubsu.ru/">Абсолютная ссылка на главную страницу</a></li>
+                <li><a href="https://www.kubsu.ru/">Абсолютная ссылка в протоколе HTTPS</a></li>
+                <li><a href="index2.html"><img src="image.jpg" alt="Легендарный котик"></a></li>
+                <li><a href="./index.html" title="ССылка на страницу">Сокращенная ссылка на внутреннюю страницу</a></li>
+                <li><a href="#123">Ссылка на фрагмент текущей страницы</a></li>
+                <li><a href="https://www.kubsu.ru?a=123&b=23&c=12">Ссылка с тремя параметрами URL</a></li>
+                <li><a href="https://www.kubsu.ru/?id=1010123124">Ссылка с параметром id в URL</a></li>
+                <li><a href="./index2.html">Ссылка на страницу в текущем каталоге</a></li>
+                <li><a href="./catalogs/about/index3.html">Ссылка на страницу в каталоге about</a></li>
+                <li>Ссылка на контекстную в тексте абзаца <a href="./index2.html">здесь</a></li>
+                <li><a href="http://www.kubsu.ru/university#zone-content-wrapper">Ссылка с другого сайта</a></li>
+                <li>
+                    <img src="image2.jpg" usemap="#image2" alt="Бесконечное лето">
+                    <map name="image2">
+                        <area coords="200,200,100" shape="circle" href="index2.html" title="Координаты для круга">
+                        <area coords="0,0,100,100" shape="rect" href="./catalogs/index4.html"
+                            title="Координаты для прямоугольника">
+                    </map>
+                </li>
+                <li><a href="#">Ссылка с пустым href</a></li>
+                <li><a>Ссылка без href</a></li>
+                <li><a href="index2.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
 
 
 
-            <li><a href="https://s123123:123123@kubsu.ru/user">Ссылка на файл на сервере FTP с авторизацией</a></li>
-            <li><!--noindex--> <a href="index2.html">Ссылка с запретом индексации</a><!--/noindex--></li>
+                <li><a href="https://s123123:123123@kubsu.ru/user">Ссылка на файл на сервере FTP с авторизацией</a></li>
+                <li><!--noindex--> <a href="index2.html">Ссылка с запретом индексации</a><!--/noindex--></li>
 
-        </ul>
+            </ul>
 
-        <ol>
-            <li><a href="index.html" title="Страница 1">Страница 1</a></li>
-            <li><a href="./index2.html" title="Страница 2">Страница 2</a></li>
-            <li><a href="./catalogs/about/index3.html" title="Страница 3">Страница 3</a></li>
-            <li><a href="./catalogs/index4.html" title="Страница 4">Страница 4</a></li>
-        </ol>
-    </section>
+            <ol>
+                <li><a href="index.html" title="Страница 1">Страница 1</a></li>
+                <li><a href="./index2.html" title="Страница 2">Страница 2</a></li>
+                <li><a href="./catalogs/about/index3.html" title="Страница 3">Страница 3</a></li>
+                <li><a href="./catalogs/index4.html" title="Страница 4">Страница 4</a></li>
+            </ol>
+        </section>
         <section class="table-section">
             <table id="table">
                 <thead>
