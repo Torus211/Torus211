@@ -19,7 +19,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    background-color: green;
+    background-color: rgb(148, 24, 202);
     color: azure;
     text-align: center;
     padding: 0;
