@@ -1,5 +1,9 @@
-header, nav, main, footer {
+header, main, footer {
     width: 100%;
+}
+nav {
+    display: flex;
+    flex-direction: row;
 }
 
 body {
@@ -56,9 +60,9 @@ tbody tr:nth-child(odd) {
         display: flex;
         flex-direction: column;
     }
-    header, nav, footer {
+    header, footer {
         -ms-flex-order: 0;
-        flex-direction: row; /* Вертикальное расположение элементов */
+        flex-direction:row; /* Вертикальное расположение элементов */
         align-items: center; /* Центрируем элементы по горизонтали */
     }
 
@@ -66,7 +70,8 @@ tbody tr:nth-child(odd) {
     nav {
         -ms-flex-order: 0;
         margin: 10px 0; /* Добавляем отступы между элементами навигации */
-        justify-content: center; /* Центрируем навигацию */
+        justify-content: center;
+        flex-direction: column;
     }
 
     #logo {
