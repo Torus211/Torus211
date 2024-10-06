@@ -1,11 +1,27 @@
 header, main, footer {
     width: 100%;
 }
+
 nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
-
+.container-fluid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    background-color: blueviolet;
+}
+main{
+    color:blueviolet;
+    font-style: italic;
+}
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
@@ -30,7 +46,7 @@ header {
 footer {
     display: flex;
     flex-direction: row;
-    background-color: chartreuse;
+    background-color: rgb(148, 24, 202);
     color: rgb(0, 0, 0);
     margin: 0;
     text-align: center;
@@ -46,32 +62,50 @@ footer {
 
 
 
+.card-body {
+    background-color: blueviolet;
+}
+
+
 tbody tr:nth-child(even) {
-    background-color: rgb(44, 228, 115);
+    background-color: rgb(173, 25, 146);
 }
 
 tbody tr:nth-child(odd) {
     background-color: rgb(42, 55, 44);
 }
 
+body {
+    font-size: 0.9rem; /* Уменьшаем размер шрифта для мобильных */
+}
 
-@media screen and (max-width: 768px) {
-    .container {
+
+@media screen and (min-width: 768px) {
+    header, main, footer {
+        width: 100%;
+    }
+    .container-fluid {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
-    header, footer {
-        -ms-flex-order: 0;
+    header {
+        
         flex-direction:row; /* Вертикальное расположение элементов */
         align-items: center; /* Центрируем элементы по горизонтали */
+    }
+    footer {
+        
+        flex-direction:row; /* Вертикальное расположение элементов */
+        align-items: center;
     }
 
     
     nav {
-        -ms-flex-order: 0;
+       
         margin: 10px 0; /* Добавляем отступы между элементами навигации */
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #logo {
@@ -85,21 +119,11 @@ tbody tr:nth-child(odd) {
         margin: 0; /* Убираем отступы */
     }
     .links-section{
-        order:2;
+        order:0;
         flex-basis: 100%; /* Элементы занимают всю ширину */
         margin: 0; /* Убираем отступы */
 
     }
-   
-    #photo1 {
-        width: 250px;
-        height: 250px;
-    }
-    #photo2 {
-        width: 240px;
-        height: 135px;
-    }
-
     body {
         font-size: 0.9rem; /* Уменьшаем размер шрифта для мобильных */
     }
