@@ -12,6 +12,33 @@
 
 <body>
     <h1>Страница в текущем каталоге</h1>
+    <script>
+        function click1() {
+            let f1 = document.getElementsByName("field1");
+            let quantity = parseInt(f1[0].value); // Получаем количество
+            let r = document.getElementById("result");
+            let s = document.getElementsByName("select1");
+
+            // Проверяем, какой товар выбран
+            if (s[0].value === "v1") { // Если выбран карандаш
+                r.innerHTML = quantity * 10 + " руб."; // 10 рублей за карандаш
+            } else if (s[0].value === "v2") { // Если выбрана ручка
+                r.innerHTML = quantity * 15 + " руб."; // 15 рублей за ручку
+            }
+
+            return false; // предотвращаем отправку формы
+        }
+    </script>  
+
+    <div id="result"></div>
+    <form>
+        <input name="field1" type="text" placeholder="Введите количество">
+        <select name="select1">
+            <option value="v1">карандаш</option>
+            <option value="v2">ручка</option>
+        </select>
+        <button id="button1" onclick="return click1();">OK</button>
+    </form>
 </body>
 
 </html>

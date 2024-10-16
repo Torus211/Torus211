@@ -8,5 +8,48 @@
 
 <body>
     <h1>Страница 4</h1>
+    <!DOCTYPE html>
+<html lang="ru">
+
+
+
+<h1>Калькулятор стоимости заказа</h1>
+
+<div id="result"></div>
+<form onsubmit="return click1();">
+    <label for="quantity">Количество:</label>
+    <input name="field2" type="number" id="quantity" min="1" value="1">
+
+    <label for="product">Выберите товар:</label>
+    <select name="select1" id="product">
+        <option value="10">карандаш - 10 руб.</option>
+        <option value="20">ручка - 20 руб.</option>
+    </select>
+
+    <button type="submit">Подсчитать стоимость</button>
+</form>
+
+<script>
+    function click1() {
+        let quantity = document.getElementById("quantity").value;
+        let productPrice = document.getElementById("product").value;
+        let resultElement = document.getElementById("result");
+
+        // Проверка на корректность введенного количества
+        if (quantity <= 0) {
+            resultElement.innerHTML = 'Введите корректное количество товара.';
+            return false;
+        }
+
+        // Подсчет стоимости
+        let totalCost = quantity * productPrice;
+        resultElement.innerHTML = Стоимость заказа: ${totalCost} руб.;
+        
+        return false; // предотвращаем отправку формы
+    }
+</script>
+
+
+
 </body>
 </html>
