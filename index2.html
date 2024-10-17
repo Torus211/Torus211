@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="JS.js"></script>
     <title>Document</title>
 </head>
 
@@ -12,23 +14,7 @@
 
 <body>
     <h1>Страница в текущем каталоге</h1>
-    <script>
-        function click1() {
-            let f1 = document.getElementsByName("field1");
-            let quantity = parseInt(f1[0].value); // Получаем количество
-            let r = document.getElementById("result");
-            let s = document.getElementsByName("select1");
-
-            // Проверяем, какой товар выбран
-            if (s[0].value === "v1") { // Если выбран карандаш
-                r.innerHTML = quantity * 10 + " руб."; // 10 рублей за карандаш
-            } else if (s[0].value === "v2") { // Если выбрана ручка
-                r.innerHTML = quantity * 15 + " руб."; // 15 рублей за ручку
-            }
-
-            return false; // предотвращаем отправку формы
-        }
-    </script>  
+ 
 
     <div id="result"></div>
     <form>
@@ -39,6 +25,29 @@
         </select>
         <button id="button1" onclick="return click1();">OK</button>
     </form>
+
+
+    
+    <div id="result2">
+        <form>
+            <input name="field" type="text" placeholder="Введите количество">
+            <form>
+                <select name="myselect">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                </select>
+               
+                <div class="myradios" id="myradios">
+                <label><input type="radio" name="myradio" value="r1">R1</label>
+                <label><input type="radio" name="myradio" value="r2">R2</label>
+                <label><input type="radio" name="myradio" value="r3">R3</label>
+                </div>
+               
+               </form>
+        </form>
+    </div>
 </body>
+
 
 </html>
