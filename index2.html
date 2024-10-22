@@ -16,21 +16,26 @@
     <h1>Страница в текущем каталоге</h1>
  
 
-    <div id="result"></div>
-    <form>
-        <input name="field1" type="text" placeholder="Введите количество">
-        <select name="select1">
-            <option value="v1">карандаш</option>
-            <option value="v2">ручка</option>
-        </select>
-        <button id="button1" onclick="return click1();">OK</button>
-    </form>
+    <div id="result">
+        <form>
+            <input name="field1" type="text" 
+            pattern="^[1-9][0-9]*$"
+            placeholder="Введите количество">
+            <select name="select1">
+                <option value="v1">карандаш</option>
+                <option value="v2">ручка</option>
+            </select>
+            <button id="button1" onclick="return click1();">OK</button>
+        </form>
+    </div>
 
 
     
     <div id="result2">
         <form>
-            <input name="field" type="text" placeholder="Введите количество">
+            <input name="field2" type="text" 
+            pattern="^[1-9][0-9]*$"
+            placeholder="Введите количество">
             <form>
                 <select name="myselect">
                 <option value="1">Option 1</option>
