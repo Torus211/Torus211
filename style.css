@@ -2,6 +2,7 @@ header, main, footer {
     width: 100%;
 }
 
+
 nav {
     display: flex;
     flex-direction: column;
@@ -61,9 +62,7 @@ footer {
 }
 
 
-h1{
-    
-}
+
 .card-body {
     background-color: blueviolet;
     color: black;
@@ -132,5 +131,20 @@ body {
     }
     body {
         font-size: 0.9rem; /* Уменьшаем размер шрифта для мобильных */
+    }
+   
+    
+    label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    
+    input, select {
+        margin-bottom: 10px;
+    }
+    
+    #result {
+        margin-top: 20px;
+        font-weight: bold;
     }
 }
