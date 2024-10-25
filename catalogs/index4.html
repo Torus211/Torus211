@@ -29,25 +29,7 @@
     <button type="submit">Подсчитать стоимость</button>
 </form>
 
-<script>
-    function click1() {
-        let quantity = document.getElementById("quantity").value;
-        let productPrice = document.getElementById("product").value;
-        let resultElement = document.getElementById("result");
 
-        // Проверка на корректность введенного количества
-        if (quantity <= 0) {
-            resultElement.innerHTML = 'Введите корректное количество товара.';
-            return false;
-        }
-
-        // Подсчет стоимости
-        let totalCost = quantity * productPrice;
-        resultElement.innerHTML = Стоимость заказа: ${totalCost} руб.;
-        
-        return false; // предотвращаем отправку формы
-    }
-</script>
 
 
 
