@@ -1,41 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
   <meta charset="UTF-8">
-  <title>Задание 7</title>
-  <script src="jquery-3.4.1.min.js"></script>
+  <title>Gallery Slider</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="gallery.js"></script>
+  <style>
+    body {
+      background-color: rgb(14, 1, 99);
+      margin: 0; /* Remove default margin */
+    }
+
+    #gallery {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+
+    #gallery div {
+      display: flex;
+      justify-content: center;
+    }
+
+    #gallery div img {
+      max-height: 800px;
+      width: 98%;
+    }
+  </style>
 </head>
 <body>
-<div class="slider" id="gallery">
-  <div>
-    <img alt="Не загрузилось(" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
-  </div>
-  <div>
-    <img alt="Не загрузилось(" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
-  </div>
-  <div>
-    <img alt="Не загрузилось(" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
-  </div>
-  <div>
-    <img alt="Не загрузилось(" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
-  </div>
-  <div>
-    <img alt="Не загрузилось(" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
-  </div>
-  <div>
-    <img alt="Не загрузилось(" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
-  </div>
-  <div>
-    <img alt="Не загрузилось(" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
-  </div>
-  <div>
-    <img alt="Не загрузилось(" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+  <div class="slider" id="gallery">
+    <div>
+      <img alt="Description of image 1" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 2" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 3" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 4" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 5" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 6" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 7" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 8" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+    </div>
   </div>
 
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    // Initialize the Slick slider
+    $(document).ready(function(){
+      $('#gallery').slick({
+        dots: true, // Add dots for navigation
+        infinite: true, // Enable infinite scrolling
+        speed: 500, // Animation speed
+        slidesToShow: 1, // Number of slides to show
+        slidesToScroll: 1 // Number of slides to scroll at a time
+      });
+    });
+  </script>
 </body>
 </html>
