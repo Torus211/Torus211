@@ -8,8 +8,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <style>
     body {
-      background-color: rgb(14, 1, 99);
-      margin: 0; /* Remove default margin */
+      background-color: slateblue;
+      margin: 0;
     }
 
     #gallery {
@@ -35,38 +35,46 @@
       <img alt="Description of image 1" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
     </div>
     <div>
-      <img alt="Description of image 2" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+      <img alt="Description of image 2" src="https://i.pinimg.com/236x/98/35/af/9835af4604f4c0788c3f9a1e652d848f.jpg">
     </div>
     <div>
-      <img alt="Description of image 3" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+      <img alt="Description of image 3" src="https://i.pinimg.com/236x/e4/ad/31/e4ad3117360ffa6d7e3e692dde48b99b.jpg">
     </div>
     <div>
-      <img alt="Description of image 4" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+      <img alt="Description of image 4" src="https://i.pinimg.com/236x/62/61/e8/6261e82acd035812977247b6e56bfddc.jpg">
     </div>
     <div>
-      <img alt="Description of image 5" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+      <img alt="Description of image 5" src="https://i.pinimg.com/236x/d5/81/e0/d581e0dff175433e2a9bf2ad6a242126.jpg">
     </div>
     <div>
-      <img alt="Description of image 6" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+      <img alt="Description of image 6" src="https://i.pinimg.com/236x/76/9f/df/769fdf220e3ee05ed2c1729c70649220.jpg">
     </div>
     <div>
-      <img alt="Description of image 7" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+      <img alt="Description of image 7" src="https://i.pinimg.com/236x/f2/e0/94/f2e094e6f6938d5f138a071e56a10aa9.jpg">
     </div>
     <div>
-      <img alt="Description of image 8" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+      <img alt="Description of image 8" src="https://i.pinimg.com/236x/e6/c0/3a/e6c03a13c8d92379d716a2516dec546b.jpg">
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
-    // Initialize the Slick slider
+    // Инициализация Slick слайдера
     $(document).ready(function(){
       $('#gallery').slick({
-        dots: true, // Add dots for navigation
-        infinite: true, // Enable infinite scrolling
-        speed: 500, // Animation speed
-        slidesToShow: 1, // Number of slides to show
-        slidesToScroll: 1 // Number of slides to scroll at a time
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3, // Показывать 3 слайда одновременно по умолчанию
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768, // Для экранов шириной до 768px
+            settings: {
+              slidesToShow: 1 // Показывать 1 слайд
+            }
+          }
+        ]
       });
     });
   </script>
