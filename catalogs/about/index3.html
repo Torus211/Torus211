@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Gallery Slider</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Добавьте эту строку -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -66,20 +66,13 @@
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 3, // Показывать 3 слайда по умолчанию
         slidesToScroll: 1,
-        mobileFirst: true, // Добавлено
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 768, // Для экранов до 768px
             settings: {
-              slidesToShow: 1
-            }
-          },
-          {
-            breakpoint: 600, // Добавлен новый breakpoint
-            settings: {
-              slidesToShow: 1
+              slidesToShow: 1 // Показывать 1 слайд на мобильных
             }
           }
         ]
