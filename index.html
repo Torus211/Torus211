@@ -1,244 +1,83 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторная работа №5</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Gallery Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <style>
+    body {
+      background-color: slateblue;
+      margin: 0;
+    }
 
+    #gallery {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+
+    #gallery div {
+      display: flex;
+      justify-content: center;
+    }
+
+    #gallery div img {
+      max-height: 800px;
+      width: 98%;
+    }
+  </style>
 </head>
+<body>
+  <div class="slider" id="gallery">
+    <div>
+      <img alt="Description of image 1" src="https://i.pinimg.com/236x/32/6e/98/326e989f0b657a65c9245a8a1912c837.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 2" src="https://i.pinimg.com/236x/98/35/af/9835af4604f4c0788c3f9a1e652d848f.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 3" src="https://i.pinimg.com/236x/e4/ad/31/e4ad3117360ffa6d7e3e692dde48b99b.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 4" src="https://i.pinimg.com/236x/62/61/e8/6261e82acd035812977247b6e56bfddc.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 5" src="https://i.pinimg.com/236x/d5/81/e0/d581e0dff175433e2a9bf2ad6a242126.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 6" src="https://i.pinimg.com/236x/76/9f/df/769fdf220e3ee05ed2c1729c70649220.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 7" src="https://i.pinimg.com/236x/f2/e0/94/f2e094e6f6938d5f138a071e56a10aa9.jpg">
+    </div>
+    <div>
+      <img alt="Description of image 8" src="https://i.pinimg.com/236x/e6/c0/3a/e6c03a13c8d92379d716a2516dec546b.jpg">
+    </div>
+  </div>
 
-
-
-
-
-<main>
-    
-    <header class="col-12">
-        <img id="logo" src="logo.jpg" alt="Наш лого" />
-        <h3 id="123">Лабораторная работа №5</h3>
-        <nav>
-            <a href="#list" type="button" class="btn btn-outline-dark">Список </a>
-            <a href="#table" type="button" class="btn btn-outline-dark">Таблица </a>
-            <a href="#form" type="button" class="btn btn-outline-dark">Форма</a>
-        </nav>
-    </header>
-
-
-
-    <body>
-
-
-        <h2>(Коты захватывают мир)</h2> <br>
-        <p>Абзац <em>Важный текст</em><br>перенос строки</p>
-
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">ichigo kurosaki</h5>
-                        <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/IchigoKurosakiBleach.jpg"
-                            class="card-img-top" alt="Изображение 4">
-                        <a href="https://en.wikipedia.org/wiki/Ichigo_Kurosaki" class="btn btn-dark">ichigo kurosaki</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Kisuke Urahara</h5>
-                        <img src="https://nyaa.shikimori.one/uploads/poster/characters/210/main-b10c1c9367697fc856eb4b4b1deb26cf.webp"
-                            class="card-img-top" alt="Изображение 4">
-                        <a href="https://shikimori.one/characters/z210-kisuke-urahara"
-                            class="btn btn-dark">Kisuke Urahara</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"> Kenpachi Zaraki</h5>
-                        <img src="https://nyaa.shikimori.one/uploads/poster/characters/909/main-1ebae3639e73c0415824f847abf716b1.webp"
-                            class="card-img-top" alt="Изображение 4">
-                        <a href="https://shikimori.one/characters/909-kenpachi-zaraki"
-                            class="btn btn-dark">Kenpachi Zaraki</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-4">
-                <a href="index2.html">
-                    <img src="image.jpg" id="photo1" alt="Легендарный котик" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 mb-4">
-                <a href="./catalogs/index4.html">
-                    <img src="image2.jpg" id="photo2" usemap="#image2" alt="Бесконечное лето" class="img-fluid">
-                </a>
-                <map name="image2">
-                    <area coords="200,200,100" shape="circle" href="index2.html" title="Координаты для круга">
-                    <area coords="0,0,100,100" shape="rect" href="./catalogs/index4.html"
-                        title="Координаты для прямоугольника">
-                </map>
-            </div>
-            <div class="container">
-
-
-                <div class="container">
-                    <div class="table-section">
-                        <table id="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Колонка 1</th>
-                                    <th scope="col">Колонка 2</th>
-                                    <th scope="col">Колонка 3</th>
-                                    <th scope="col">Колонка 4</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td colspan="2">Ячейка 11 объединенная с 12</td>
-                                    <td colspan="2">Ячейка 13 объединенная с 14</td>
-                                </tr>
-                                <tr>
-                                    <td>Ячейка 21</td>
-                                    <td>Ячейка 22</td>
-                                    <td>Ячейка 23</td>
-                                    <td>Ячейка 24</td>
-                                </tr>
-                                <tr>
-                                    <td>Ячейка 31</td>
-                                    <td>Ячейка 32</td>
-                                    <td>Ячейка 33</td>
-                                    <td>Ячейка 34</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Ячейка 41 объединенная с 42</td>
-                                    <td colspan="2">Ячейка 43 объединенная с 44</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4">Ячейка 51 52 53 54</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">Ячейка 61 62 63</td>
-                                    <td>Ячейка 64</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-
-                    <div class="links-section">
-                        <ul id="list">
-                            <li>
-                                <p><strong>Очень важный текст</strong></p>
-                            </li>
-                            <li><a href="http://www.kubsu.ru/">Абсолютная ссылка на главную страницу</a></li>
-                            <li><a href="https://www.kubsu.ru/">Абсолютная ссылка в протоколе HTTPS</a></li>
-
-                            <li><a href="./index.html" title="ССылка на страницу">Сокращенная ссылка на внутреннюю
-                                    страницу</a>
-                            </li>
-                            <li><a href="#123">Ссылка на фрагмент текущей страницы</a></li>
-                            <li><a href="https://www.kubsu.ru?a=123&b=23&c=12">Ссылка с тремя параметрами URL</a>
-                            </li>
-                            <li><a href="https://www.kubsu.ru/?id=1010123124">Ссылка с параметром id в URL</a></li>
-                            <li><a href="./index2.html">Ссылка на страницу в текущем каталоге</a></li>
-                            <li><a href="./catalogs/about/index3.html">Ссылка на страницу в каталоге about</a></li>
-                            <li>Ссылка на контекстную в тексте абзаца <a href="./index2.html">здесь</a></li>
-                            <li><a href="http://www.kubsu.ru/university#zone-content-wrapper">Ссылка с другого
-                                    сайта</a>
-                            </li>
-
-                            <li><a href="#">Ссылка с пустым href</a></li>
-                            <li><a>Ссылка без href</a></li>
-                            <li><a href="index2.html" rel="nofollow">Ссылка, по которой запрещен переход
-                                    поисковикам</a>
-                            </li>
-                            <li><a href="https://s123123:123123@kubsu.ru/user">Ссылка на файл на сервере FTP с
-                                    авторизацией</a>
-                            </li>
-                            <li><!--noindex--> <a href="index2.html">Ссылка с запретом индексации</a><!--/noindex-->
-                            </li>
-
-                        </ul>
-
-                        <ol>
-                            <li><a href="index.html" title="Страница 1">Страница 1</a></li>
-                            <li><a href="./index2.html" title="Страница 2">Страница 2</a></li>
-                            <li><a href="./catalogs/about/index3.html" title="Страница 3">Страница 3</a></li>
-                            <li><a href="./catalogs/index4.html" title="Страница 4">Страница 4</a></li>
-                        </ol>
-                    </div>
-                </div>
-
-
-                <div>
-                    <form id="form" class="form" action="index.html" method="POST">
-
-                        <label for="fullName">ФИО:</label>
-                        <input type="text" id="fullName" name="fullName" required
-                            pattern="^[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+$"
-                            title="Введите ФИО в формате: Фамилия Имя Отчество" placeholder="Иванов Иван Иванович">
-
-                        Телефон:<br />
-                        <input name="field-phone" value="+71231231231" type="tel" pattern="\+7\d{10}" required />
-                        </label><br />
-                        <label>
-                            Email:<br />
-                            <input name="field-email" value="test@example.com" type="email" required />
-                        </label><br />
-                        Дата:<br />
-                        <input name="field-date" value="2019-08-13" type="date" />
-                        </label><br />
-                        Пол:<br />
-                        <label><input type="radio" checked="checked" name="radio-group-1" value="Мужской" />
-                            Мужской</label>
-                        <label><input type="radio" name="radio-group-1" value="Женский" /> Женский</label><br />
-                        <label>
-                            Список (listbox с множественным выбором):<br />
-                            <select name="field-name-4[]" multiple="multiple">
-                                <option value="Pascal">Pascal</option>
-                                <option value="C" selected="selected">C</option>
-                                <option value="C++" selected="selected">C++</option>
-                                <option value="JavaScript" selected="selected">JavaScript</option>
-                                <option value="PHP" selected="selected">PHP</option>
-                                <option value="Python" selected="selected">Python</option>
-                                <option value="Java" selected="selected">Java</option>
-                                <option value="Haskell" selected="selected">Haskell</option>
-                                <option value="Clojure" selected="selected">Clojure</option>
-                                <option value="Prolog" selected="selected">Prolog</option>
-                                <option value="Scala" selected="selected">Scala</option>
-                            </select>
-                        </label><br />
-                        <label>
-                            Биография:<br />
-                            <textarea name="field-name-2">Расскажите о себе</textarea>
-                        </label><br />
-                        С контрактом ознакомлен:<br />
-                        <label><input type="checkbox" checked="checked" name="check-1" /> Ознакомлен</label><br />
-                        <input type="submit" value="Отправить" />
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
-    </body>
-
-</main>
-
-
-<br>
-
-
-
-<footer>(C) Torus Hidenami</footer> <br>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    // Инициализация Slick слайдера
+    $(document).ready(function(){
+      $('#gallery').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3, // Показывать 3 слайда по умолчанию
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768, // Для экранов до 768px
+            settings: {
+              slidesToShow: 1 // Показывать 1 слайд на мобильных
+            }
+          }
+        ]
+      });
+    });
+  </script>
+</body>
 </html>
